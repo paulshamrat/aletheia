@@ -49,4 +49,4 @@ nav:
   - Research Pipelines:
     - CDKL5 Structural Annotation Pipeline: cdkl5_structural_pipeline.md
   - Biochemistry Notes:
-    - Kinase Breathing & ATP Autophosphorylation (Literature): kinase_breathing_atp_autophosphorylation.md
+    - Kinase Breathing & ATP Autophosphorylation (Literature): internal/kinase_breathing_atp_autophosphorylation.md
