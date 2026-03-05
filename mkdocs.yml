@@ -47,6 +47,7 @@ nav:
   - Systems:
     - Linux Monitoring: linux_system_monitoring.md
     - Palmetto HPC: palmetto_hpc.md
+    - Git & GitHub Workflow: git_github_workflow.md
   - Environments:
     - Python & Conda: python_conda.md
   - Data:
