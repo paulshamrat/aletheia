@@ -52,5 +52,5 @@ nav:
   - Data:
     - Google Drive Sync: rclone_setup_guide.md
   - Research:
-    - CDKL5 Structural Pipeline: cdkl5_structural_pipeline.md
+    - CDKL5 Structural Pipeline: internal/cdkl5_structural_pipeline.md
     - Biochemistry Notes: internal/kinase_breathing_atp_autophosphorylation.md
