@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="http://localhost:8000/python_conda/">
+        <link rel="canonical" href="http://localhost:8000/git_github_workflow/">
       
       
         <link rel="prev" href="../palmetto_hpc/">
       
       
-        <link rel="next" href="../rclone_setup_guide/">
+        <link rel="next" href="../python_conda/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Python & Conda - Aletheia</title>
+        <title>Git & GitHub Workflow - Aletheia</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#python-conda-management" class="md-skip">
+        <a href="#git-github-workflow-guide" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Python & Conda
+              Git & GitHub Workflow
             
           </span>
         </div>
@@ -228,10 +228,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../linux_system_monitoring/" class="md-tabs__link">
           
   
@@ -248,13 +250,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../python_conda/" class="md-tabs__link">
           
   
   
@@ -294,7 +294,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../internal/cdkl5_structural_pipeline/" class="md-tabs__link">
+        <a href="../internal/cdkl5_structural_pipeline.md" class="md-tabs__link">
           
   
   
@@ -370,26 +370,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -407,7 +412,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -474,70 +479,6 @@
 
               
             
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Environments
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Environments
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
               
                 
   
@@ -561,7 +502,7 @@
   <span class="md-ellipsis">
     
   
-    Python & Conda
+    Git & GitHub Workflow
   
 
     
@@ -579,7 +520,7 @@
   <span class="md-ellipsis">
     
   
-    Python & Conda
+    Git & GitHub Workflow
   
 
     
@@ -605,10 +546,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-basic-environment-setup" class="md-nav__link">
+  <a href="#1-initializing-the-repository" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Basic Environment Setup
+        1. Initializing the Repository
       
     </span>
   </a>
@@ -616,32 +557,166 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-installing-packages" class="md-nav__link">
+  <a href="#2-connecting-to-github-gh-cli" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Installing Packages
+        2. Connecting to GitHub (gh CLI)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Connecting to GitHub (gh CLI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#3-saving-exporting" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#creating-the-project" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Saving &amp; Exporting
+        Creating the Project
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#4-common-fixes" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#updating-metadata-about-section" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Common Fixes
+        Updating Metadata (About Section)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-the-branching-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. The Branching Strategy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. The Branching Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#switching-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Switching Branches
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-hosting-on-github-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Hosting on GitHub Pages
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Hosting on GitHub Pages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-manual-safe-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Manual (Safe) Way
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-security-privacy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Security &amp; Privacy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Security &amp; Privacy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#layer-1-gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer 1: .gitignore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-2-mkdocs-snippets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer 2: MkDocs Snippets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-3-exclude_docs-build-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer 3: exclude_docs (Build Security)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-daily-commands-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Daily Commands Summary
       
     </span>
   </a>
@@ -652,6 +727,93 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Environments
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Environments
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../python_conda/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python & Conda
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -810,7 +972,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../internal/cdkl5_structural_pipeline/" class="md-nav__link">
+      <a href="../internal/cdkl5_structural_pipeline.md" class="md-nav__link">
         
   
   
@@ -838,7 +1000,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../internal/kinase_breathing_atp_autophosphorylation/" class="md-nav__link">
+      <a href="../internal/kinase_breathing_atp_autophosphorylation.md" class="md-nav__link">
         
   
   
@@ -893,10 +1055,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-basic-environment-setup" class="md-nav__link">
+  <a href="#1-initializing-the-repository" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Basic Environment Setup
+        1. Initializing the Repository
       
     </span>
   </a>
@@ -904,32 +1066,166 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-installing-packages" class="md-nav__link">
+  <a href="#2-connecting-to-github-gh-cli" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Installing Packages
+        2. Connecting to GitHub (gh CLI)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Connecting to GitHub (gh CLI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#3-saving-exporting" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#creating-the-project" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Saving &amp; Exporting
+        Creating the Project
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#4-common-fixes" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#updating-metadata-about-section" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Common Fixes
+        Updating Metadata (About Section)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-the-branching-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. The Branching Strategy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. The Branching Strategy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#switching-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Switching Branches
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-hosting-on-github-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Hosting on GitHub Pages
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Hosting on GitHub Pages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-manual-safe-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Manual (Safe) Way
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-security-privacy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Security &amp; Privacy
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Security &amp; Privacy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#layer-1-gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer 1: .gitignore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-2-mkdocs-snippets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer 2: MkDocs Snippets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer-3-exclude_docs-build-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layer 3: exclude_docs (Build Security)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-daily-commands-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Daily Commands Summary
       
     </span>
   </a>
@@ -953,30 +1249,102 @@
 
 
 
-<h1 id="python-conda-management">🐍 Python &amp; Conda Management</h1>
-<p>Best practices for managing environments and dependencies for your research.</p>
-<h2 id="1-basic-environment-setup">1. Basic Environment Setup</h2>
-<p>Always create a dedicated environment for each project:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>my_project<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>conda<span class="w"> </span>activate<span class="w"> </span>my_project
+<h1 id="git-github-workflow-guide">🐙 Git &amp; GitHub Workflow Guide</h1>
+<p>This guide documents the exact workflow we used to secure, version-control, and host the <strong>Aletheia Wiki</strong>.</p>
+<hr />
+<h2 id="1-initializing-the-repository">1. Initializing the Repository</h2>
+<p>To turn a local folder into a Git repository:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">cd</span><span class="w"> </span>~/works/wiki
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>git<span class="w"> </span>init
 </span></code></pre></div></p>
-<h2 id="2-installing-packages">2. Installing Packages</h2>
-<p>Prefer using <code>conda</code> for data science packages and <code>pip</code> for everything else:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>conda<span class="w"> </span>install<span class="w"> </span>numpy<span class="w"> </span>pandas<span class="w"> </span>matplotlib
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+<h2 id="2-connecting-to-github-gh-cli">2. Connecting to GitHub (<code>gh</code> CLI)</h2>
+<p>We used the <strong>GitHub CLI</strong> to handle authentication and repository creation without leaving the terminal.</p>
+<h3 id="authentication">Authentication</h3>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>gh<span class="w"> </span>auth<span class="w"> </span>login
+</span></code></pre></div>
+<em>Selection during setup</em>: SSH, Web Browser login.</p>
+<h3 id="creating-the-project">Creating the Project</h3>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>gh<span class="w"> </span>repo<span class="w"> </span>create<span class="w"> </span>aletheia<span class="w"> </span>--public<span class="w"> </span>--source<span class="o">=</span>.<span class="w"> </span>--remote<span class="o">=</span>origin<span class="w"> </span>--push
+</span></code></pre></div>
+- <code>--public</code>: Makes the code visible to everyone.
+- <code>--source=.</code>: Uses the current folder as the local source.
+- <code>--push</code>: Uploads the code immediately.</p>
+<h3 id="updating-metadata-about-section">Updating Metadata (About Section)</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>gh<span class="w"> </span>repo<span class="w"> </span>edit<span class="w"> </span>paulshamrat/aletheia<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span>--description<span class="w"> </span><span class="s2">&quot;A curated technical knowledge base...&quot;</span><span class="w"> </span><span class="se">\</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span>--homepage<span class="w"> </span><span class="s2">&quot;https://paulshamrat.github.io/aletheia/&quot;</span>
+</span></code></pre></div>
+<hr />
+<h2 id="3-the-branching-strategy">3. The Branching Strategy</h2>
+<p>We use two main branches to keep the source code and the website separate:</p>
+<ol>
+<li><strong><code>main</code> branch</strong>: Contains your <strong>Markdown source files</strong>. This is what you edit.</li>
+<li><strong><code>gh-pages</code> branch</strong>: Contains the <strong>built HTML files</strong>. This is what the public sees as a website.</li>
+</ol>
+<h3 id="switching-branches">Switching Branches</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>git<span class="w"> </span>checkout<span class="w"> </span>main<span class="w">      </span><span class="c1"># Back to editing mode</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>git<span class="w"> </span>checkout<span class="w"> </span>gh-pages<span class="w">  </span><span class="c1"># View the built website files</span>
+</span></code></pre></div>
+<hr />
+<h2 id="4-hosting-on-github-pages">4. Hosting on GitHub Pages</h2>
+<p>To update your website after making changes to your Markdown files:</p>
+<h3 id="the-manual-safe-way">The Manual (Safe) Way</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># 1. Build the site</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>mkdocs<span class="w"> </span>build<span class="w"> </span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># 2. Deploy to the special gh-pages branch</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>mkdocs<span class="w"> </span>gh-deploy
+</span></code></pre></div>
+<hr />
+<h2 id="5-security-privacy">5. Security &amp; Privacy</h2>
+<p>This is the most critical part of our setup. We use three layers of security to keep your personal data private.</p>
+<h3 id="layer-1-gitignore">Layer 1: <code>.gitignore</code></h3>
+<p>Prevents Git from ever "seeing" certain files.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a># .gitignore content
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>docs/internal/    # Your private notes folder
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>site/             # The built website (we only push it to gh-pages)
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>*.log             # System logs
 </span></code></pre></div></p>
-<h2 id="3-saving-exporting">3. Saving &amp; Exporting</h2>
-<p>To share or backup your environment:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>conda<span class="w"> </span>env<span class="w"> </span><span class="nb">export</span><span class="w"> </span>&gt;<span class="w"> </span>environment.yml
+<h3 id="layer-2-mkdocs-snippets">Layer 2: MkDocs Snippets</h3>
+<p>Allows you to keep a guide public but "punch out" a hole for private data.
+<div class="language-markdown highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="gh"># In your guide:</span>
+</span></code></pre></div>
+- <strong>Local</strong>: MkDocs fills the hole with your secret file.
+- <strong>GitHub</strong>: The hole remains empty (invisible).</p>
+<h3 id="layer-3-exclude_docs-build-security">Layer 3: <code>exclude_docs</code> (Build Security)</h3>
+<p>Prevents private files from being accidentally included in the website bundle during <code>mkdocs build</code>.
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># mkdocs.yml</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nt">exclude_docs</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="no">internal/*</span>
 </span></code></pre></div></p>
-<h2 id="4-common-fixes">4. Common Fixes</h2>
-<ul>
-<li><strong>Slow Solves</strong>: Use <code>mamba</code> instead of <code>conda</code> for much faster package resolution.</li>
-<li><strong>Kernel Not Found</strong>: If your environment isn't showing up in Jupyter:
-  <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>pip<span class="w"> </span>install<span class="w"> </span>ipykernel
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>python<span class="w"> </span>-m<span class="w"> </span>ipykernel<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>--name<span class="w"> </span>my_project
-</span></code></pre></div></li>
-</ul>
+<hr />
+<h2 id="6-daily-commands-summary">6. Daily Commands Summary</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Action</th>
+<th style="text-align: left;">Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Save Changes</strong></td>
+<td style="text-align: left;"><code>git add . &amp;&amp; git commit -m "Your message"</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Upload Source</strong></td>
+<td style="text-align: left;"><code>git push origin main</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Update Website</strong></td>
+<td style="text-align: left;"><code>mkdocs gh-deploy</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Start Local View</strong></td>
+<td style="text-align: left;"><code>wiki</code> (custom alias)</td>
+</tr>
+</tbody>
+</table>
 
 
 
