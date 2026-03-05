@@ -8,3 +8,4 @@ docs/internal/
 .DS_Store
 .env
 *.log
+aletheia_checkpoint.md
