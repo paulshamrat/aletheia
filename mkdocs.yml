@@ -1,0 +1,52 @@
+site_name: "Paul's Technical Knowledge Base"
+site_url: "http://localhost:8000"
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: index.md
+  - Guides:
+    - Data Sync: rclone_setup_guide.md
+    - Linux System Monitoring: linux_system_monitoring.md
+    - Palmetto HPC: palmetto_hpc.md
+    - Python & Conda: python_conda.md
+  - Research Pipelines:
+    - CDKL5 Structural Annotation Pipeline: cdkl5_structural_pipeline.md
+  - Biochemistry Notes:
+    - Kinase Breathing & ATP Autophosphorylation (Literature): kinase_breathing_atp_autophosphorylation.md

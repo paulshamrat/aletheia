@@ -1,0 +1,10 @@
+# MkDocs built site
+site/
+
+# Private/Internal notes and snippets
+docs/internal/
+
+# System files
+.DS_Store
+.env
+*.log
