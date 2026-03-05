@@ -12,8 +12,7 @@ Welcome to your local research & engineering wiki. This is your central hub for 
 | **📊 Monitoring** | Performance monitoring & shortcuts | [Monitoring Guide](./linux_system_monitoring.md) |
 | **🧊 Palmetto HPC** | Clemson HPC connection and usage | [Palmetto Guide](./palmetto_hpc.md) |
 | **🐍 Python** | Environment management and Conda tips | [Python Guide](./python_conda.md) |
-| **🧬 Lab Work** | Research Lab protocols and files | [Research Lab](../../research-lab/) |
-| **📓 Daily Progress** | Your chronological research notes | [Daily Notes 2025](../../daily-notes.md) |
+--8<-- "docs/internal/index_private_rows.md"
 
 ---
 
@@ -21,16 +20,14 @@ Welcome to your local research & engineering wiki. This is your central hub for 
 
 ```mermaid
 graph TD
-    Works["/home/paul/works"]
-    Wiki["Tech Wiki Hub"]
-    Sync["Rclone & GDrive"]
+    Works["Research Workspace"]
+    Wiki["Aletheia Wiki"]
+    Sync["Data Sync (Rclone)"]
     Mon["System Monitoring"]
-    Lab["Research Lab Projects"]
-    Notes["Daily Research Notes"]
+    Lab["Research Projects"]
 
     Works --> Wiki
     Works --> Lab
-    Works --> Notes
     Wiki --> Sync
     Wiki --> Mon
 ```

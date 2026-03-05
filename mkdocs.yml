@@ -44,12 +44,13 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Guides:
-    - Data Sync: rclone_setup_guide.md
-    - Linux System Monitoring: linux_system_monitoring.md
+  - Systems:
+    - Linux Monitoring: linux_system_monitoring.md
     - Palmetto HPC: palmetto_hpc.md
+  - Environments:
     - Python & Conda: python_conda.md
-  - Research Pipelines:
-    - CDKL5 Structural Annotation Pipeline: cdkl5_structural_pipeline.md
-  - Biochemistry Notes:
-    - Kinase Breathing & ATP Autophosphorylation (Literature): internal/kinase_breathing_atp_autophosphorylation.md
+  - Data:
+    - Google Drive Sync: rclone_setup_guide.md
+  - Research:
+    - CDKL5 Structural Pipeline: cdkl5_structural_pipeline.md
+    - Biochemistry Notes: internal/kinase_breathing_atp_autophosphorylation.md
