@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>http://localhost:8000/</loc>
+         <lastmod>2026-03-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/git_github_workflow/</loc>
+         <lastmod>2026-03-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/linux_system_monitoring/</loc>
+         <lastmod>2026-03-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/palmetto_hpc/</loc>
+         <lastmod>2026-03-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/python_conda/</loc>
+         <lastmod>2026-03-05</lastmod>
+    </url>
+    <url>
+         <loc>http://localhost:8000/rclone_setup_guide/</loc>
+         <lastmod>2026-03-05</lastmod>
+    </url>
+</urlset>

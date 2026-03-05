@@ -8,29 +8,29 @@
       
       
       
-        <link rel="canonical" href="http://localhost:8000/rclone_setup_guide/">
+        <link rel="canonical" href="http://localhost:8000/">
       
       
-        <link rel="prev" href="../python_conda/">
       
+        <link rel="next" href="linux_system_monitoring/">
       
       
         
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
     
     
       
-        <title>Google Drive Sync - Aletheia</title>
+        <title>Aletheia</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -49,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#rclone-google-drive-setup-sync-guide" class="md-skip">
+        <a href="#aletheia" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +88,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Aletheia" class="md-header__button md-logo" aria-label="Aletheia" data-md-component="logo">
+    <a href="." title="Aletheia" class="md-header__button md-logo" aria-label="Aletheia" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Google Drive Sync
+              Home
             
           </span>
         </div>
@@ -207,9 +207,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
         
   
   
@@ -230,7 +232,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../linux_system_monitoring/" class="md-tabs__link">
+        <a href="linux_system_monitoring/" class="md-tabs__link">
           
   
   
@@ -250,7 +252,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../python_conda/" class="md-tabs__link">
+        <a href="python_conda/" class="md-tabs__link">
           
   
   
@@ -266,13 +268,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="rclone_setup_guide/" class="md-tabs__link">
           
   
   
@@ -292,7 +292,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../internal/cdkl5_structural_pipeline.md" class="md-tabs__link">
+        <a href="internal/cdkl5_structural_pipeline.md" class="md-tabs__link">
           
   
   
@@ -326,7 +326,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Aletheia" class="md-nav__button md-logo" aria-label="Aletheia" data-md-component="logo">
+    <a href="." title="Aletheia" class="md-nav__button md-logo" aria-label="Aletheia" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -341,10 +341,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
         
   
   
@@ -360,6 +387,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-access-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 Quick Access Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#knowledge-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧠 Knowledge Map
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-this-wiki" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📖 How to use this Wiki
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🛠️ Maintenance
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -423,7 +514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../linux_system_monitoring/" class="md-nav__link">
+      <a href="linux_system_monitoring/" class="md-nav__link">
         
   
   
@@ -451,7 +542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../palmetto_hpc/" class="md-nav__link">
+      <a href="palmetto_hpc/" class="md-nav__link">
         
   
   
@@ -479,7 +570,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../git_github_workflow/" class="md-nav__link">
+      <a href="git_github_workflow/" class="md-nav__link">
         
   
   
@@ -566,7 +657,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../python_conda/" class="md-nav__link">
+      <a href="python_conda/" class="md-nav__link">
         
   
   
@@ -598,31 +689,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -640,7 +726,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -655,37 +741,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Google Drive Sync
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="rclone_setup_guide/" class="md-nav__link">
         
   
   
@@ -701,154 +760,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-credentials-your-private-tunnel" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Credentials (Your Private Tunnel)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Credentials (Your Private Tunnel)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-to-create-your-own-client-id-secret" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How to create your own Client ID &amp; Secret
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-to-re-authenticate-if-needed" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How to re-authenticate (if needed)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-daily-workflow-your-duty" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Daily Workflow (Your Duty)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Daily Workflow (Your Duty)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-clean-up-duplicates" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: Clean Up Duplicates
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-sync-your-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 2: Sync Your Work
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-speed-tips-save-time" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Speed Tips (Save Time)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Speed Tips (Save Time)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#trick-1-sync-only-your-active-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Trick 1: Sync Only Your Active Project
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#trick-2-use-fast-list" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Trick 2: Use Fast-List
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-helpful-tips" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Helpful Tips
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -920,7 +831,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../internal/cdkl5_structural_pipeline.md" class="md-nav__link">
+      <a href="internal/cdkl5_structural_pipeline.md" class="md-nav__link">
         
   
   
@@ -948,7 +859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../internal/kinase_breathing_atp_autophosphorylation.md" class="md-nav__link">
+      <a href="internal/kinase_breathing_atp_autophosphorylation.md" class="md-nav__link">
         
   
   
@@ -1003,127 +914,43 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-credentials-your-private-tunnel" class="md-nav__link">
+  <a href="#quick-access-dashboard" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Credentials (Your Private Tunnel)
+        🚀 Quick Access Dashboard
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="1. Credentials (Your Private Tunnel)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-to-create-your-own-client-id-secret" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How to create your own Client ID &amp; Secret
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-to-re-authenticate-if-needed" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        How to re-authenticate (if needed)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-daily-workflow-your-duty" class="md-nav__link">
+  <a href="#knowledge-map" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Daily Workflow (Your Duty)
+        🧠 Knowledge Map
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="2. Daily Workflow (Your Duty)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-clean-up-duplicates" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: Clean Up Duplicates
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-sync-your-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 2: Sync Your Work
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-speed-tips-save-time" class="md-nav__link">
+  <a href="#how-to-use-this-wiki" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Speed Tips (Save Time)
+        📖 How to use this Wiki
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="4. Speed Tips (Save Time)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#trick-1-sync-only-your-active-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Trick 1: Sync Only Your Active Project
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#trick-2-use-fast-list" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Trick 2: Use Fast-List
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-helpful-tips" class="md-nav__link">
+  <a href="#maintenance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        5. Helpful Tips
+        🛠️ Maintenance
       
     </span>
   </a>
@@ -1147,76 +974,73 @@
 
 
 
-<h1 id="rclone-google-drive-setup-sync-guide">Rclone Google Drive Setup &amp; Sync Guide</h1>
-<p><img alt="Rclone Sync Thumbnail" src="../assets/images/rclone_thumbnail.png" /></p>
-<p>This is your personal guide for managing Google Drive synchronization on this machine.</p>
-<h2 id="1-credentials-your-private-tunnel">1. Credentials (Your Private Tunnel)</h2>
-<p>We have configured <code>rclone</code> to use your own Google Cloud Project. This stops the "daily logout" issue.</p>
-<h3 id="how-to-create-your-own-client-id-secret">How to create your own Client ID &amp; Secret</h3>
-<p>If you ever need to create a new set of keys from scratch, follow these steps:</p>
-<ol>
-<li><strong>Google Cloud Console</strong>: Go to the <a href="https://console.cloud.google.com/">Google Cloud Console</a>.</li>
-<li><strong>Create Project</strong>: Click the project dropdown at the top and select <strong>"New Project"</strong>. Give it a name like <code>rclone-paul</code>.</li>
-<li><strong>Enable API</strong>: In the search bar, type <strong>"Google Drive API"</strong> and click <strong>Enable</strong>.</li>
-<li><strong>Configure OAuth Consent</strong>:<ul>
-<li>Go to <strong>APIs &amp; Services</strong> &gt; <strong>OAuth consent screen</strong>.</li>
-<li>Choose <strong>"External"</strong> and click <strong>Create</strong>.</li>
-<li>Fill in the <strong>App name</strong> (e.g., <code>rclone</code>) and your <strong>User support email</strong>.</li>
-<li>Add your email to the <strong>Developer contact information</strong>.</li>
-<li>Click <strong>Save and Continue</strong> until you reach the dashboard.</li>
-</ul>
-</li>
-<li><strong>Create Credentials</strong>:<ul>
-<li>Go to <strong>APIs &amp; Services</strong> &gt; <strong>Credentials</strong>.</li>
-<li>Click <strong>+ Create Credentials</strong> &gt; <strong>OAuth client ID</strong>.</li>
-<li>Select <strong>"Desktop app"</strong> as the Application type.</li>
-<li>Name it <code>rclone-paul</code> and click <strong>Create</strong>.</li>
-</ul>
-</li>
-<li><strong>Get the Keys</strong>: A popup will show your <strong>Client ID</strong> and <strong>Client Secret</strong>. Copy these into this guide!</li>
-</ol>
-<h3 id="how-to-re-authenticate-if-needed">How to re-authenticate (if needed)</h3>
-<p>If you ever get an "Authorization failed" error, run:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>rclone<span class="w"> </span>config<span class="w"> </span>reconnect<span class="w"> </span>gdrive:
-</span></code></pre></div>
-1. Type <strong>y</strong> to refresh the token.
-2. Type <strong>y</strong> for auto-config.
-3. In the browser, log in with <code>&lt;your_email&gt;@g.clemson.edu</code>.
-4. Click <strong>Advanced</strong> &gt; <strong>Go to rclone (unsafe)</strong> &gt; <strong>Allow</strong>.</p>
+<h1 id="aletheia">🛠️ Aletheia</h1>
+<p>Welcome to your local research &amp; engineering wiki. This is your central hub for technical guides, infrastructure notes, and lab protocols.</p>
 <hr />
-<h2 id="2-daily-workflow-your-duty">2. Daily Workflow (Your Duty)</h2>
-<p>To keep your files synced, you should follow this routine:
-- <strong>After significant local changes</strong>: Run the <strong>"Upload"</strong> command to back up your work.
-- <strong>Before starting work</strong>: Run the <strong>"Download"</strong> command if you think you changed files on another device.</p>
-<h3 id="step-1-clean-up-duplicates">Step 1: Clean Up Duplicates</h3>
-<p>Google Drive sometimes creates multiple files with the same name. Run this to fix it automatically:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>rclone<span class="w"> </span>dedupe<span class="w"> </span>gdrive:works<span class="w"> </span>--dedupe-mode<span class="w"> </span>largest<span class="w"> </span>-P
-</span></code></pre></div></p>
-<h3 id="step-2-sync-your-work">Step 2: Sync Your Work</h3>
+<h2 id="quick-access-dashboard">🚀 Quick Access Dashboard</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Category</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>📂 Data Sync</strong></td>
+<td style="text-align: left;">Google Drive &amp; rclone setup (personal keys)</td>
+<td style="text-align: left;"><a href="rclone_setup_guide/">Rclone Guide</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>📊 Monitoring</strong></td>
+<td style="text-align: left;">Performance monitoring &amp; shortcuts</td>
+<td style="text-align: left;"><a href="linux_system_monitoring/">Monitoring Guide</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>🧊 Palmetto HPC</strong></td>
+<td style="text-align: left;">Clemson HPC connection and usage</td>
+<td style="text-align: left;"><a href="palmetto_hpc/">Palmetto Guide</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>🐍 Python</strong></td>
+<td style="text-align: left;">Environment management and Conda tips</td>
+<td style="text-align: left;"><a href="python_conda/">Python Guide</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="knowledge-map">🧠 Knowledge Map</h2>
+<pre class="mermaid"><code>graph TD
+    Works["Research Workspace"]
+    Wiki["Aletheia Wiki"]
+    Sync["Data Sync (Rclone)"]
+    Mon["System Monitoring"]
+    Lab["Research Projects"]
+
+    Works --&gt; Wiki
+    Works --&gt; Lab
+    Wiki --&gt; Sync
+    Wiki --&gt; Mon</code></pre>
+<hr />
+<h2 id="how-to-use-this-wiki">📖 How to use this Wiki</h2>
 <ul>
-<li><strong>To Upload (Local -&gt; Cloud)</strong>:
-  <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>rclone<span class="w"> </span>copy<span class="w"> </span>/home/paul/works<span class="w"> </span>gdrive:works<span class="w"> </span>-P
-</span></code></pre></div></li>
-<li><strong>To Download (Cloud -&gt; Local)</strong>:
-  <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>rclone<span class="w"> </span>copy<span class="w"> </span>gdrive:works<span class="w"> </span>/home/paul/works<span class="w"> </span>-P
-</span></code></pre></div></li>
+<li><strong>Navigation</strong>: Click the links above to jump to specific guides.</li>
+<li><strong>Search</strong>: Use <code>Ctrl+Shift+F</code> in VS Code to search across all your documentation.</li>
+<li><strong>Editing</strong>: Just edit any Markdown file. Your changes are saved instantly!</li>
 </ul>
-<p><strong>Note</strong>: I recommend using <code>copy</code> instead of <code>sync</code>. <code>copy</code> is safer because it never deletes files; it only adds new ones.</p>
-<h2 id="4-speed-tips-save-time">4. Speed Tips (Save Time)</h2>
-<p>If checking all 30,000 files takes too long (e.g., 4-5 minutes), use these tricks:</p>
-<h3 id="trick-1-sync-only-your-active-project">Trick 1: Sync Only Your Active Project</h3>
-<p>Instead of syncing all of <code>works</code>, only sync the folder you are actually using today:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>rclone<span class="w"> </span>copy<span class="w"> </span>~/works/research-lab/YOUR_PROJECT<span class="w"> </span>gdrive:works/research-lab/YOUR_PROJECT<span class="w"> </span>-P
-</span></code></pre></div></p>
-<h3 id="trick-2-use-fast-list">Trick 2: Use Fast-List</h3>
-<p>This tells Google Drive to send the file list in larger chunks, which can cut the "Checking" time in half:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>rclone<span class="w"> </span>copy<span class="w"> </span>/home/paul/works<span class="w"> </span>gdrive:works<span class="w"> </span>--fast-list<span class="w"> </span>-P
-</span></code></pre></div></p>
-<h2 id="5-helpful-tips">5. Helpful Tips</h2>
+<blockquote>
+<p>[!TIP]
+Keep this folder synced with Google Drive using the <code>rclone</code> commands in the <strong>Data Sync</strong> guide to ensure your wiki is backed up!</p>
+</blockquote>
+<hr />
+<h2 id="maintenance">🛠️ Maintenance</h2>
 <ul>
-<li><strong>Check first</strong>: Run <code>rclone check /home/paul/works gdrive:works --size-only</code> to see what is different without changing anything.</li>
-<li><strong>Progress</strong>: Always use <code>-P</code> to see how much data is being transferred.</li>
+<li><strong>Start the Server</strong>: Just type <code>wiki</code> in any terminal!</li>
+<li><strong>Update Content</strong>: Just edit the files in the <code>docs/</code> folder. The website updates automatically!</li>
 </ul>
+<hr />
+<p><em>Last updated: 2026-03-03</em></p>
 
 
 
@@ -1272,10 +1096,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
