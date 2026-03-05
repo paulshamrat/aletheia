@@ -1,6 +1,6 @@
 # 🛠️ Aletheia
 
-Welcome to your local research & engineering wiki. This is your central hub for technical guides, infrastructure notes, and lab protocols.
+Welcome to the Aletheia research & engineering wiki. This is a central hub for technical guides, infrastructure notes, and lab protocols.
 
 ---
 

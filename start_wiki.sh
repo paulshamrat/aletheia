@@ -1,6 +1,6 @@
 #!/bin/bash
 # Start the Technical Wiki local server
-cd /home/paul/works/alethia
+cd /home/paul/works/aletheia
 # Kill any existing server on port 8000
 fuser -k 8000/tcp 2>/dev/null
 # Start the new server in the background
