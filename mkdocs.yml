@@ -25,6 +25,9 @@ theme:
     - search.highlight
     - content.code.copy
 
+exclude_docs: |
+  internal/*
+
 markdown_extensions:
   - admonition
   - pymdownx.highlight:
