@@ -35,7 +35,7 @@ rclone config reconnect gdrive:
 ```
 1. Type **y** to refresh the token.
 2. Type **y** for auto-config.
-3. In the browser, log in with `shamrap@g.clemson.edu`.
+3. In the browser, log in with `<your_email>@g.clemson.edu`.
 4. Click **Advanced** > **Go to rclone (unsafe)** > **Allow**.
 
 ---
