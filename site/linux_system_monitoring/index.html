@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="http://localhost:8000/rclone_setup_guide/">
+        <link rel="canonical" href="http://localhost:8000/linux_system_monitoring/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../rclone_setup_guide/">
       
       
-        <link rel="next" href="../linux_system_monitoring/">
+        <link rel="next" href="../palmetto_hpc/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Data Sync - Aletheia</title>
+        <title>Linux System Monitoring - Aletheia</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#rclone-google-drive-setup-sync-guide" class="md-skip">
+        <a href="#linux-system-performance-monitoring" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Data Sync
+              Linux System Monitoring
             
           </span>
         </div>
@@ -234,7 +234,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../rclone_setup_guide/" class="md-tabs__link">
           
   
   
@@ -407,6 +407,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../rclone_setup_guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Sync
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -426,7 +454,7 @@
   <span class="md-ellipsis">
     
   
-    Data Sync
+    Linux System Monitoring
   
 
     
@@ -444,7 +472,7 @@
   <span class="md-ellipsis">
     
   
-    Data Sync
+    Linux System Monitoring
   
 
     
@@ -470,22 +498,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-credentials-your-private-tunnel" class="md-nav__link">
+  <a href="#summary-table" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Credentials (Your Private Tunnel)
+        Summary Table
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Credentials (Your Private Tunnel)">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-keyboard-shortcut-ctrlshiftesc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Keyboard Shortcut (Ctrl+Shift+Esc)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-real-time-monitoring-top-bar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Real-time Monitoring (Top Bar)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-high-performance-terminal-monitor-btop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. High-Performance Terminal Monitor (btop)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. High-Performance Terminal Monitor (btop)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-to-create-your-own-client-id-secret" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        How to create your own Client ID &amp; Secret
+        Installation
       
     </span>
   </a>
@@ -493,10 +554,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#how-to-re-authenticate-if-needed" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
       
-        How to re-authenticate (if needed)
+        Usage
       
     </span>
   </a>
@@ -509,88 +570,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-daily-workflow-your-duty" class="md-nav__link">
+  <a href="#4-centering-the-dock-windows-11-style" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Daily Workflow (Your Duty)
+        4. Centering the Dock (Windows 11 Style)
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="2. Daily Workflow (Your Duty)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-clean-up-duplicates" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: Clean Up Duplicates
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-sync-your-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 2: Sync Your Work
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-speed-tips-save-time" class="md-nav__link">
+  <a href="#resource-impact" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Speed Tips (Save Time)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Speed Tips (Save Time)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#trick-1-sync-only-your-active-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Trick 1: Sync Only Your Active Project
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#trick-2-use-fast-list" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Trick 2: Use Fast-List
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-helpful-tips" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Helpful Tips
+        Resource Impact
       
     </span>
   </a>
@@ -601,34 +595,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../linux_system_monitoring/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Linux System Monitoring
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -898,22 +864,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-credentials-your-private-tunnel" class="md-nav__link">
+  <a href="#summary-table" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Credentials (Your Private Tunnel)
+        Summary Table
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Credentials (Your Private Tunnel)">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-keyboard-shortcut-ctrlshiftesc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Keyboard Shortcut (Ctrl+Shift+Esc)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-real-time-monitoring-top-bar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Real-time Monitoring (Top Bar)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-high-performance-terminal-monitor-btop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. High-Performance Terminal Monitor (btop)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. High-Performance Terminal Monitor (btop)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-to-create-your-own-client-id-secret" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        How to create your own Client ID &amp; Secret
+        Installation
       
     </span>
   </a>
@@ -921,10 +920,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#how-to-re-authenticate-if-needed" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
       
-        How to re-authenticate (if needed)
+        Usage
       
     </span>
   </a>
@@ -937,88 +936,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-daily-workflow-your-duty" class="md-nav__link">
+  <a href="#4-centering-the-dock-windows-11-style" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Daily Workflow (Your Duty)
+        4. Centering the Dock (Windows 11 Style)
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="2. Daily Workflow (Your Duty)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-clean-up-duplicates" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 1: Clean Up Duplicates
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-sync-your-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Step 2: Sync Your Work
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-speed-tips-save-time" class="md-nav__link">
+  <a href="#resource-impact" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Speed Tips (Save Time)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Speed Tips (Save Time)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#trick-1-sync-only-your-active-project" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Trick 1: Sync Only Your Active Project
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#trick-2-use-fast-list" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Trick 2: Use Fast-List
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-helpful-tips" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. Helpful Tips
+        Resource Impact
       
     </span>
   </a>
@@ -1042,76 +974,84 @@
 
 
 
-<h1 id="rclone-google-drive-setup-sync-guide">Rclone Google Drive Setup &amp; Sync Guide</h1>
-<p><img alt="Rclone Sync Thumbnail" src="../assets/images/rclone_thumbnail.png" /></p>
-<p>This is your personal guide for managing Google Drive synchronization on this machine.</p>
-<h2 id="1-credentials-your-private-tunnel">1. Credentials (Your Private Tunnel)</h2>
-<p>We have configured <code>rclone</code> to use your own Google Cloud Project. This stops the "daily logout" issue.</p>
-<h3 id="how-to-create-your-own-client-id-secret">How to create your own Client ID &amp; Secret</h3>
-<p>If you ever need to create a new set of keys from scratch, follow these steps:</p>
+<h1 id="linux-system-performance-monitoring">Linux System Performance Monitoring</h1>
+<p>This guide covers how to set up Windows-like system monitoring on Ubuntu (GNOME).</p>
+<h2 id="summary-table">Summary Table</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">Tool</th>
+<th style="text-align: left;">Shortcut / Access</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Main Interface</strong></td>
+<td style="text-align: left;">GNOME System Monitor</td>
+<td style="text-align: left;"><code>Ctrl+Shift+Esc</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tray Icons</strong></td>
+<td style="text-align: left;">Vitals (GNOME Extension)</td>
+<td style="text-align: left;">Top Panel</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Advanced CLI</strong></td>
+<td style="text-align: left;">btop</td>
+<td style="text-align: left;">Terminal (<code>btop</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Dock Alignment</strong></td>
+<td style="text-align: left;">Dash to Panel</td>
+<td style="text-align: left;">Absolute Centering</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-keyboard-shortcut-ctrlshiftesc">1. Keyboard Shortcut (Ctrl+Shift+Esc)</h2>
+<p>The default task manager in Ubuntu is <code>gnome-system-monitor</code>. To map it to the familiar Windows shortcut:</p>
 <ol>
-<li><strong>Google Cloud Console</strong>: Go to the <a href="https://console.cloud.google.com/">Google Cloud Console</a>.</li>
-<li><strong>Create Project</strong>: Click the project dropdown at the top and select <strong>"New Project"</strong>. Give it a name like <code>rclone-paul</code>.</li>
-<li><strong>Enable API</strong>: In the search bar, type <strong>"Google Drive API"</strong> and click <strong>Enable</strong>.</li>
-<li><strong>Configure OAuth Consent</strong>:<ul>
-<li>Go to <strong>APIs &amp; Services</strong> &gt; <strong>OAuth consent screen</strong>.</li>
-<li>Choose <strong>"External"</strong> and click <strong>Create</strong>.</li>
-<li>Fill in the <strong>App name</strong> (e.g., <code>rclone</code>) and your <strong>User support email</strong>.</li>
-<li>Add your email to the <strong>Developer contact information</strong>.</li>
-<li>Click <strong>Save and Continue</strong> until you reach the dashboard.</li>
+<li>Open <strong>Settings</strong> &gt; <strong>Keyboard</strong> &gt; <strong>View and Customize Shortcuts</strong>.</li>
+<li>Select <strong>Custom Shortcuts</strong>.</li>
+<li>Add a new shortcut:<ul>
+<li><strong>Name</strong>: System Monitor</li>
+<li><strong>Command</strong>: <code>gnome-system-monitor</code></li>
+<li><strong>Shortcut</strong>: <code>Ctrl+Shift+Esc</code></li>
 </ul>
 </li>
-<li><strong>Create Credentials</strong>:<ul>
-<li>Go to <strong>APIs &amp; Services</strong> &gt; <strong>Credentials</strong>.</li>
-<li>Click <strong>+ Create Credentials</strong> &gt; <strong>OAuth client ID</strong>.</li>
-<li>Select <strong>"Desktop app"</strong> as the Application type.</li>
-<li>Name it <code>rclone-paul</code> and click <strong>Create</strong>.</li>
-</ul>
-</li>
-<li><strong>Get the Keys</strong>: A popup will show your <strong>Client ID</strong> and <strong>Client Secret</strong>. Copy these into this guide!</li>
 </ol>
-<h3 id="how-to-re-authenticate-if-needed">How to re-authenticate (if needed)</h3>
-<p>If you ever get an "Authorization failed" error, run:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>rclone<span class="w"> </span>config<span class="w"> </span>reconnect<span class="w"> </span>gdrive:
+<h2 id="2-real-time-monitoring-top-bar">2. Real-time Monitoring (Top Bar)</h2>
+<p>To see CPU, RAM, and Temperature at a glance in your top panel:</p>
+<ol>
+<li>Install <strong>Extension Manager</strong>:
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>gnome-shell-extension-manager
+</span></code></pre></div></li>
+<li>Open <strong>Extension Manager</strong>.</li>
+<li>Go to the <strong>Browse</strong> tab.</li>
+<li>Search for and install <strong>Vitals</strong>.</li>
+<li>Once active, your performance metrics will appear in the top panel.</li>
+</ol>
+<h2 id="3-high-performance-terminal-monitor-btop">3. High-Performance Terminal Monitor (btop)</h2>
+<p>If you prefer a terminal-based interface, <code>btop</code> is highly recommended for its visual aesthetics and detailed information.</p>
+<h3 id="installation">Installation</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>btop
 </span></code></pre></div>
-1. Type <strong>y</strong> to refresh the token.
-2. Type <strong>y</strong> for auto-config.
-3. In the browser, log in with <code>shamrap@g.clemson.edu</code>.
-4. Click <strong>Advanced</strong> &gt; <strong>Go to rclone (unsafe)</strong> &gt; <strong>Allow</strong>.</p>
-<hr />
-<h2 id="2-daily-workflow-your-duty">2. Daily Workflow (Your Duty)</h2>
-<p>To keep your files synced, you should follow this routine:
-- <strong>After significant local changes</strong>: Run the <strong>"Upload"</strong> command to back up your work.
-- <strong>Before starting work</strong>: Run the <strong>"Download"</strong> command if you think you changed files on another device.</p>
-<h3 id="step-1-clean-up-duplicates">Step 1: Clean Up Duplicates</h3>
-<p>Google Drive sometimes creates multiple files with the same name. Run this to fix it automatically:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>rclone<span class="w"> </span>dedupe<span class="w"> </span>gdrive:works<span class="w"> </span>--dedupe-mode<span class="w"> </span>largest<span class="w"> </span>-P
-</span></code></pre></div></p>
-<h3 id="step-2-sync-your-work">Step 2: Sync Your Work</h3>
-<ul>
-<li><strong>To Upload (Local -&gt; Cloud)</strong>:
-  <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>rclone<span class="w"> </span>copy<span class="w"> </span>/home/paul/works<span class="w"> </span>gdrive:works<span class="w"> </span>-P
-</span></code></pre></div></li>
-<li><strong>To Download (Cloud -&gt; Local)</strong>:
-  <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>rclone<span class="w"> </span>copy<span class="w"> </span>gdrive:works<span class="w"> </span>/home/paul/works<span class="w"> </span>-P
-</span></code></pre></div></li>
-</ul>
-<p><strong>Note</strong>: I recommend using <code>copy</code> instead of <code>sync</code>. <code>copy</code> is safer because it never deletes files; it only adds new ones.</p>
-<h2 id="4-speed-tips-save-time">4. Speed Tips (Save Time)</h2>
-<p>If checking all 30,000 files takes too long (e.g., 4-5 minutes), use these tricks:</p>
-<h3 id="trick-1-sync-only-your-active-project">Trick 1: Sync Only Your Active Project</h3>
-<p>Instead of syncing all of <code>works</code>, only sync the folder you are actually using today:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>rclone<span class="w"> </span>copy<span class="w"> </span>~/works/research-lab/YOUR_PROJECT<span class="w"> </span>gdrive:works/research-lab/YOUR_PROJECT<span class="w"> </span>-P
-</span></code></pre></div></p>
-<h3 id="trick-2-use-fast-list">Trick 2: Use Fast-List</h3>
-<p>This tells Google Drive to send the file list in larger chunks, which can cut the "Checking" time in half:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>rclone<span class="w"> </span>copy<span class="w"> </span>/home/paul/works<span class="w"> </span>gdrive:works<span class="w"> </span>--fast-list<span class="w"> </span>-P
-</span></code></pre></div></p>
-<h2 id="5-helpful-tips">5. Helpful Tips</h2>
-<ul>
-<li><strong>Check first</strong>: Run <code>rclone check /home/paul/works gdrive:works --size-only</code> to see what is different without changing anything.</li>
-<li><strong>Progress</strong>: Always use <code>-P</code> to see how much data is being transferred.</li>
-</ul>
+<h3 id="usage">Usage</h3>
+<p>Run <code>btop</code> in any terminal. Use <code>q</code> or <code>Esc</code> to quit.</p>
+<h2 id="4-centering-the-dock-windows-11-style">4. Centering the Dock (Windows 11 Style)</h2>
+<p>If the dock icons are shifted to the left, you can force them to stay in the exact center of the screen:</p>
+<ol>
+<li><strong>Right-click</strong> on any empty space in the taskbar.</li>
+<li>Select <strong>"Dash to Panel Settings"</strong>.</li>
+<li>Navigate to <strong>Position</strong> &gt; <strong>Taskbar Display</strong>.</li>
+<li>Set <strong>"Center Taskbar"</strong> to <strong>Absolute</strong>.</li>
+</ol>
+<p>This ensures the dock uses the monitor's center point rather than centering relative to the available space between other elements.</p>
+<h2 id="resource-impact">Resource Impact</h2>
+<p>These tools are designed to be lightweight:
+- <strong>Vitals</strong>: Extremely low (~2-5MB RAM).
+- <strong>btop</strong>: Low (~10-20MB RAM).
+- <strong>System Monitor</strong>: Moderate (~40-80MB RAM), only while open.</p>
 
 
 
