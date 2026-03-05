@@ -1,4 +1,4 @@
-# 🛠️ Paul's Technical Knowledge Base (works/wiki)
+# 🛠️ Aletheia
 
 Welcome to your local research & engineering wiki. This is your central hub for technical guides, infrastructure notes, and lab protocols.
 
