@@ -69,7 +69,7 @@ If checking all 30,000 files takes too long (e.g., 4-5 minutes), use these trick
 ### Trick 1: Sync Only Your Active Project
 Instead of syncing all of `works`, only sync the folder you are actually using today:
 ```bash
-rclone copy ~/works/alexovlab/YOUR_PROJECT gdrive:works/alexovlab/YOUR_PROJECT -P
+rclone copy ~/works/research-lab/YOUR_PROJECT gdrive:works/research-lab/YOUR_PROJECT -P
 ```
 
 ### Trick 2: Use Fast-List

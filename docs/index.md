@@ -12,7 +12,7 @@ Welcome to your local research & engineering wiki. This is your central hub for 
 | **📊 Monitoring** | Performance monitoring & shortcuts | [Monitoring Guide](./linux_system_monitoring.md) |
 | **🧊 Palmetto HPC** | Clemson HPC connection and usage | [Palmetto Guide](./palmetto_hpc.md) |
 | **🐍 Python** | Environment management and Conda tips | [Python Guide](./python_conda.md) |
-| **🧬 Lab Work** | Alexov Lab protocols and files | [Alexov Lab](../../alexovlab/) |
+| **🧬 Lab Work** | Research Lab protocols and files | [Research Lab](../../research-lab/) |
 | **📓 Daily Progress** | Your chronological research notes | [Daily Notes 2025](../../daily-notes.md) |
 
 ---
@@ -25,7 +25,7 @@ graph TD
     Wiki["Tech Wiki Hub"]
     Sync["Rclone & GDrive"]
     Mon["System Monitoring"]
-    Lab["Alexov Lab Projects"]
+    Lab["Research Lab Projects"]
     Notes["Daily Research Notes"]
 
     Works --> Wiki
